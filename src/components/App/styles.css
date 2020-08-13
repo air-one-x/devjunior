@@ -1,0 +1,13 @@
+.app {
+  width: 99vw;
+  text-align: left;
+
+}
+
+.app img {
+  max-width: 150px;
+}
+
+.app--main {
+  margin-top: 90px;
+}
