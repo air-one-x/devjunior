@@ -14,4 +14,5 @@ Devjunior permet ainsi de se rendre visible auprès de recruteurs cherchant votr
 - yarn start
 
 
-### Premier aperçu au 14/08/2020 
+### Premier aperçu au 14/08/2020
+![devjunior]
