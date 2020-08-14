@@ -15,4 +15,4 @@ Devjunior permet ainsi de se rendre visible auprès de recruteurs cherchant votr
 
 
 ### Premier aperçu au 14/08/2020
-![devjunior]
+![devjunior](devjunior.PNG)
