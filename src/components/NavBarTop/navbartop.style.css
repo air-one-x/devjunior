@@ -1,8 +1,8 @@
-.navbar--top ul, .navbar--top {
+ .navbar--top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 100%;
     color: white;;
 }
 
@@ -15,4 +15,50 @@
     height: 90px;
     top: 0
 
+}
+
+.navbar--top ul {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.navbar--top a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar--top a {
+    color: rgb(197, 197, 197);
+}
+
+.navbar--top button {
+    border: none;
+    color : #220bad;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+@media all and (max-width: 1050px) {
+    .burger {
+        display: block;
+    }
+
+    .item--menu {
+        display: none;
+    }
+
+    .navbar--top ul {
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 1051px) {
+    .burger {
+        display: none;
+    }
+
+    .item--menu {
+        display: block;
+    }
 }
