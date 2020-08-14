@@ -8,7 +8,9 @@ import './styles.css';
 import Home from '../Home/home.component';
 
 // == Composant
-const App = () => (
+const App = () =>{ 
+
+  return(
   <div className="app">
     <NavBarTop />
     <main className="app--main">
@@ -19,6 +21,7 @@ const App = () => (
 
   </div>
 );
+}
 
 // == Export
 export default App;

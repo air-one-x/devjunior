@@ -1,6 +1,7 @@
 .home--page {
     width: 100vw;
-    height: 63vh;
+    height: 100%;
+    padding-bottom: 5%;
     display: flex;
     justify-content: space-between;
     padding-top: 10%;
@@ -10,52 +11,143 @@
 
 .home--page__picture {
     width: 50%;
-    height: 100%;
+    height: 50vh;
     background-image: url('/pictures/hometop.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     margin-right: 6%;
 }
-
 .home--page__content {
     width: 50%;
     padding-left: 10%;
     color: white;
     
 }
-
 .home--page__content h1 {
     font-size: 3rem;
     margin-bottom: 4%;
 }
-
+.contrats {
+    opacity: 0.5;
+}
 .button__inscription {
     background-color: #220bad;
-    border: 1px solid grey;
-    color: grey;
+    border: 1px solid white;
+    color: white;
+    opacity: 0.5;
 
 }
-
+.button__inscription:hover {
+    opacity: 1;
+}
 .button__connexion {
     background-color: white;
     border: 1px solid #220bad;
+    color: #220bad;
+    opacity: 0.9;
 }
-
+.button__connexion:hover {
+    opacity: 1;
+}
 .home--page__content button {
     padding: 20px;
     margin-right: 20px; 
     margin-top: 5%;
     border-radius: 5px;
 }
-
 .banner--compagnies {
     width: 100vw;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 3rem;
 }
+.discover--compagnies{
+    margin-top: 10%;
+    height: 60vh;
+    padding-left: 10%;
+    padding-right: 7%;
+    width: 100vw;
+    max-width: 100vw;
+}
+.discover--compagnies__picture {
+    background-image: url('/pictures/compagnies.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
+}
+.discover--compagnies__content h2, .discover--developer__content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+}
+.discover--compagnies__content ul, .discover--developer__content ul {
+    margin-top: 4%;
+    padding-left: 2%;
+}
+.discover--compagnies__content li, .discover--developer__content li {
+    list-style-type: disc;
+}
+.discover--compagnies__content span, .discover--developer__content span {
+    font-weight: bold;
+
+}
+.button--search--compagnies {
+    text-align: center;
+    margin-top: 5%;
+}
+.button--search--compagnies button {
+    background-color: white;
+    border: 1px solid #220bad;
+    color: #220bad;
+    border-radius: 5px;
+    padding: 10px;
+}
+.button--search--compagnies button:hover {
+    color: white;
+    background-color: #220bad;
+    content: 'eeee';
+}
+.button--search--déveloper {
+    text-align: center;
+    margin-top: 5%;
+}
+.button--search--déveloper button {
+    background-color:#220bad;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.button--search--déveloper button:hover {
+    border:none;
+}
+.triangle--top--developer {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #220bad;
+    border-right: 100vw solid transparent;
+}
+.triangle--bottom--developer {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100vw solid #220bad;
+    border-bottom: -1px solid transparent;
+    transform: rotate(180deg);
+}
+.discover--developer__picture {
+    background-image: url('/pictures/dev.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.discover--developer {
+    background-color: #220bad ;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
 @media all and (max-width: 1315px) {
     .home--page__picture {
         display: none;
@@ -66,4 +158,22 @@
         padding-right: 10%;
     }
 
+}
+@media all and (max-width: 992px) {
+    .discover--compagnies__picture{
+        display: none;
+    }
+
+    .discover--developer__picture {
+        display: none;
+    }
+}
+@media all and (min-width: 993px) {
+    .discover--compagnies__picture{
+        display: block;
+    }
+
+    .discover--developer__picture {
+        display: block;
+    }
 }

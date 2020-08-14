@@ -2,19 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90vw;
     color: white;;
 }
 
 .navbar--top {
     width: 100vw;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 9%;
+    padding-right: 9%;
     position: fixed;
-    background-color: #220bad;
+    z-index: 10;
     height: 90px;
-    top: 0
-
+    top: 0;
 }
 
 .navbar--top ul {
@@ -38,6 +37,12 @@
     border-radius: 15px;
     padding: 5px 15px 5px 15px;
 }
+
+.navbar--black {
+    transition: ease-out 1s;
+    background-color: black;
+}
+
 
 @media all and (max-width: 1050px) {
     .burger {

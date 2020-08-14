@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import './navbartop.style.css';
 import Burger from './burger.component';
 
 const NavBarTop = () => {
 
+    let navbar = useRef(null);
+
+    useEffect(()=> {
+        window.addEventListener('scroll', () => {
+          if(window.pageYOffset > document.querySelector('.navbar--top').offsetTop) {
+              navbar.current.classList.add('navbar--black');
+          } else {
+            navbar.current.classList.remove('navbar--black');
+        }
+        });
+
+    
+    },[]);
+
     return (
-        <div className="navbar--top">
+        <div className="navbar--top" ref={navbar}>
             <h1>DEVJUNIOR</h1>
 
             <ul>

@@ -7,23 +7,27 @@ import Logos from '../../Data/logos';
 
 const Home = () => {
 
+
     return (
         <div>
 
 
 
             <div className="home--page">
+
                 <div className="home--page__content">
-                    <h1>Car nos développeurs juniors ont du talents !</h1>
-                    <p>Devjunior a était conçu pour donner de la visibilité aux développeurs juniors mais aussi pour montrer aux entreprises que les développeurs juniors ont du talents.  </p>
+                    <h1>Car nos développeurs juniors ont du talent !</h1>
+                    <p>Devjunior a était conçu pour donner de la visibilité aux développeurs juniors mais aussi pour montrer aux entreprises que les développeurs juniors ont du talent.  </p>
                     <br></br>
-                    <p>CDI, CDD, stage, alternance ou freelance</p>
+                    <p className="contrats">CDI, CDD, stage, alternance ou freelance</p>
                     <br></br>
                     <button className="button__inscription">S'inscrire</button>
                     <button className="button__connexion">Se connecter</button>
                 </div>
+
             <div className="home--page__picture"></div>
             </div>
+
 
 
 
@@ -44,6 +48,55 @@ const Home = () => {
                     </li>))
                 }
             </ul>
+
+
+
+
+           <div className="discover--compagnies row">
+
+               <div className="discover--compagnies__content col-lg-6 col-md-12 col-sm-12 col-12">
+                   <h2>Trouvez une entreprise qui vous ressemble </h2>
+                   <p>Nous pensons qu'il devrait être simple pour un développeur junior de trouver une entreprise afin de vivre de sa passion.</p>
+                   <ul>
+                      <li><span>Choisissez</span> vos préférences</li>
+                      <li><span>Retrouvez</span> les recommandations des anciens et actuels développeurs</li>
+                      <li><span>Prenez</span> contact avec les entreprises</li>
+                   </ul>
+                   </div>
+
+                   <div className="discover--compagnies__picture col-lg-6 col-md-12 col-sm-12 col-12"></div>
+                   <div className="button--search--compagnies col-lg-12 col-sm-12 col-12"><button>Découvrir les entreprises</button></div>   
+               </div>
+
+
+
+            <div className="triangle--top--developer"></div>
+
+
+
+            <div className="discover--developer row">
+
+                <div className="discover--developer__picture col-lg-6 col-md-12 col-sm-12 col-12"></div>
+
+                <div className="discover--developer__content col-lg-6 col-md-12 col-sm-12 col-12">
+                   <h2>Trouvez le candidat idéal pour vos missions </h2>
+                   <p>Afin de faciliter le recrutement de jeunes développeurs, nous avons repensé le CV. Faites confiance aux futurs talents.</p>
+                   <ul>
+                      <li><span>Choisissez</span> selon vos critères</li>
+                      <li><span>Testez</span> les candidats </li>
+                      <li><span>Prenez</span> contact avec les développeurs</li>
+                   </ul>
+                </div>
+                <div className="button--search--déveloper col-lg-12 col-sm-12 col-12"><button>Découvrir les développeurs </button></div>
+
+            </div>
+
+
+
+            <div className="triangle--bottom--developer"></div>
+
+
+
 
         </div>
     );
