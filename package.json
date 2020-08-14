@@ -66,6 +66,7 @@
     "react-router-dom": "^5.2.0",
     "redux": "*",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^1.2.0"
+    "semantic-ui-react": "^1.2.0",
+    "uuid": "^8.3.0"
   }
 }

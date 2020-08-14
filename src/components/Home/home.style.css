@@ -49,6 +49,13 @@
     border-radius: 5px;
 }
 
+.banner--compagnies {
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3rem;
+}
+
 @media all and (max-width: 1315px) {
     .home--page__picture {
         display: none;
