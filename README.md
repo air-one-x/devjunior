@@ -6,7 +6,6 @@
 
 Il est parfois difficile de trouver un emploi quand nous sommes développeurs juniors. 
 Devjunior permet ainsi de se rendre visible auprès de recruteurs cherchant votre profil.
-(Design inspiré du site welovedevs)
 
 ### Lancer le projet
 
