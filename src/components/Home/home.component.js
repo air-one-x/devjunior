@@ -74,6 +74,8 @@ const Home = () => {
 
 
 
+
+
             <div className="discover--developer row">
 
                 <div className="discover--developer__picture col-lg-6 col-md-12 col-sm-12 col-12"></div>
@@ -94,6 +96,28 @@ const Home = () => {
 
 
             <div className="triangle--bottom--developer"></div>
+
+
+
+
+
+            <div className="discover--job row">
+
+               <div className="discover--job__content col-lg-6 col-md-12 col-sm-12 col-12">
+                   <h2>Recherchez et trouvez votre job de rêve </h2>
+                   <p>Trouver une entreprise est parfois compliqué. Nous vous aidons dans vos recherches afin de vivre de votre passion.</p>
+                   <ul>
+                      <li><span>Contrôlez</span> vos candidatures</li>
+                      <li><span>Retrouvez</span> les emplois auxquels vous avez postulé</li>
+                      <li><span>Devenez</span> invisible en choisissant les entreprises qui ne vous correspondent pas</li>
+                   </ul>
+                   </div>
+
+                   <div className="discover--job__picture col-lg-6 col-md-12 col-sm-12 col-12"></div>
+                   <div className="button--search--job col-lg-12 col-sm-12 col-12"><button>Découvrir les offres</button></div>   
+               </div>
+
+
 
 
 

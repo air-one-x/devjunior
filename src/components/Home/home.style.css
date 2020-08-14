@@ -62,7 +62,7 @@
     padding-right: 10%;
     margin-top: 3rem;
 }
-.discover--compagnies{
+.discover--compagnies, .discover--job{
     margin-top: 10%;
     height: 60vh;
     padding-left: 10%;
@@ -76,33 +76,33 @@
     background-size: contain;
 
 }
-.discover--compagnies__content h2, .discover--developer__content h2 {
+.discover--compagnies__content h2, .discover--developer__content h2, .discover--job__content h2 {
     font-size: 2.5rem;
     margin-bottom: 4%;
 }
-.discover--compagnies__content ul, .discover--developer__content ul {
+.discover--compagnies__content ul, .discover--developer__content ul, .discover--job__content ul {
     margin-top: 4%;
     padding-left: 2%;
 }
-.discover--compagnies__content li, .discover--developer__content li {
+.discover--compagnies__content li, .discover--developer__content li, .discover--job__content li {
     list-style-type: disc;
 }
-.discover--compagnies__content span, .discover--developer__content span {
+.discover--compagnies__content span, .discover--developer__content span, .discover--job__content span {
     font-weight: bold;
 
 }
-.button--search--compagnies {
+.button--search--compagnie, .button--search--job {
     text-align: center;
     margin-top: 5%;
 }
-.button--search--compagnies button {
+.button--search--compagnies button, .button--search--job button{
     background-color: white;
     border: 1px solid #220bad;
     color: #220bad;
     border-radius: 5px;
     padding: 10px;
 }
-.button--search--compagnies button:hover {
+.button--search--compagnies button:hover, .button--search--job button:hover {
     color: white;
     background-color: #220bad;
     content: 'eeee';
@@ -148,6 +148,11 @@
     padding-bottom: 5%;
     color: white;
 }
+.discover--job__picture {
+    background-image: url('/pictures/job.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 @media all and (max-width: 1315px) {
     .home--page__picture {
         display: none;
@@ -163,8 +168,10 @@
     .discover--compagnies__picture{
         display: none;
     }
-
     .discover--developer__picture {
+        display: none;
+    }
+    .discover--job__picture {
         display: none;
     }
 }
@@ -172,8 +179,10 @@
     .discover--compagnies__picture{
         display: block;
     }
-
     .discover--developer__picture {
+        display: block;
+    }
+    .discover--job__picture {
         display: block;
     }
 }

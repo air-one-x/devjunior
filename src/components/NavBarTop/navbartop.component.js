@@ -15,8 +15,7 @@ const NavBarTop = () => {
             navbar.current.classList.remove('navbar--black');
         }
         });
-
-    
+        
     },[]);
 
     return (
