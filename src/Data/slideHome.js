@@ -14,7 +14,7 @@ export default [
 
     },
     {
-        comments: "Que dire à par merci beaucoup ! J'avais renoncé à la recherche d'emploi jusqu'à aujourd'hui. Maintenant que je sais que mon profil correspond au profil attendue, je suis déterminé à reprendre mes recherches.",
+        comments: "Que dire à part merci beaucoup ! J'avais renoncé à la recherche d'emploi jusqu'à aujourd'hui. Maintenant que je sais que mon profil correspond au profil attendu, je suis déterminé à reprendre mes recherches.",
         picture: 'profil4.jpg'
 
     },
