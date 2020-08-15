@@ -4,6 +4,7 @@ import { v4 as id } from 'uuid';
 
 import './home.style.css';
 import Logos from '../../Data/logos';
+import Slide from '../../containers/slideHome.container';
 
 const Home = () => {
 
@@ -115,7 +116,12 @@ const Home = () => {
 
                    <div className="discover--job__picture col-lg-6 col-md-12 col-sm-12 col-12"></div>
                    <div className="button--search--job col-lg-12 col-sm-12 col-12"><button>Découvrir les offres</button></div>   
-               </div>
+            </div>
+
+            <div className="slide--show">
+                <h2>Des milliers de développeiurs ont trouver leur premier emploi ici</h2>
+                <Slide />
+            </div>
 
 
 

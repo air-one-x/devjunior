@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import slideHome from './slideHome.reducer';
 
 export default combineReducers({
-  counter,
+  slideHome,
 });

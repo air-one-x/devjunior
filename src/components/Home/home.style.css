@@ -91,7 +91,7 @@
     font-weight: bold;
 
 }
-.button--search--compagnie, .button--search--job {
+.button--search--compagnies, .button--search--job {
     text-align: center;
     margin-top: 5%;
 }
@@ -153,6 +153,15 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.slide--show {
+    width: 100%;
+    margin-top: 10%;
+}
+.slide--show h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 @media all and (max-width: 1315px) {
     .home--page__picture {
         display: none;
@@ -184,5 +193,10 @@
     }
     .discover--job__picture {
         display: block;
+    }
+}
+@media all and (max-width: 570px) {
+    .slide--show {
+        margin-top: 15%;
     }
 }
