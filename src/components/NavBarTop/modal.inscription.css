@@ -1,0 +1,29 @@
+.title--modal--inscription {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.form--inscription button {
+    background-color: #220bad;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.api--succes {
+    margin-top: 4rem;
+    background-color: rgb(5, 117, 5);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.api--denied {
+    margin-top: 4rem;
+    background-color: rgb(238, 78, 78);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+

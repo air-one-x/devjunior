@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import './navbartop.style.css';
 import Burger from './burger.component';
+import ModalInscription from '../../containers/modal.inscription.container';
 
 const NavBarTop = () => {
 
@@ -16,7 +17,9 @@ const NavBarTop = () => {
         }
         });
         
-    },[]);
+    },[]);    
+    
+
 
     return (
         <div className="navbar--top" ref={navbar}>
@@ -25,7 +28,7 @@ const NavBarTop = () => {
             <ul>
                 <li className="item--menu"><a href="#">Entreprises</a></li>
                 <li className="item--menu"><a href="#">Jobs</a></li>
-                <li className="item--menu"><button>Inscription</button></li>
+                <li className="item--menu"><ModalInscription /></li>
                 <li className="item--menu"><a href="#">Connexion</a></li>
                 <li className="burger"><Burger /></li>
             </ul>
