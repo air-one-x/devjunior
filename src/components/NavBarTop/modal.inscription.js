@@ -115,7 +115,18 @@ const TransitionsModal = ({...state}) => {
         <Fade in={open}>
           <div className={classes.paper}>
                   <h2 id="transition-modal-title" className="title--modal--inscription">Inscription</h2>
-            <div className="form--inscription">
+            <form className="form--inscription" onSubmit={(e) => {
+              e.preventDefault();
+              const message = document.getElementById('message--form') ;
+              if(state.email != '' && state.password !='' && state.name !='' && state.verifPass != '') {
+                  message.classList.remove('check--form--false');
+                  message.textContent = '';
+                  state.checkApi();
+              } else {                       
+                message.classList.add('check--form--false');
+                message.textContent = 'Veuillez remplir les champs manquants';
+              }
+            } }>
                <div className="username form-group row">
                    <input type="username" placeholder="Nom" id="username" className="col-lg-12" value={state.name} onChange={(event) => state.changeName(event.target.value)}/>
                 </div>
@@ -167,28 +178,14 @@ const TransitionsModal = ({...state}) => {
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" checked={state.isCompany} onChange={() => state.changeIsCompany()} />
                     <label className="form-check-label" htmlFor="exampleCheck1" onChange={() => state.changeIsCompany()}>Je suis une entreprise</label>
                </div>
-               <button 
-                   id="button--form" 
-                   onClick={() => {
-                     const message = document.getElementById('message--form') ;
-                     if(state.email != '' && state.password !='' && state.name !='' && state.verifPass != '') {
-                         message.classList.remove('check--form--false');
-                         message.textContent = '';
-                         state.checkApi()
-                     } else {                       
-                       message.classList.add('check--form--false');
-                       message.getElementById('message--form').textContent = 'Veuillez remplir les champs manquants';
-                     }
-                   }}>
-                     Je m'inscris
-               </button>
+               <button id="button--form" type="submit"> Je m'inscris </button>
 
                <div id="message--form" className={state.isRegister === 'oui' ? 'api--succes' :''|| state.isRegister === 'non' ? 'api--denied':''}>
                  {
                     state.isRegister === 'oui' ? 'Inscription validée' :''|| state.isRegister === 'non' ? 'Inscription refusée':''
                  }
                </div>
-            </div>
+            </form>
           </div>
         </Fade>
       </Modal>
