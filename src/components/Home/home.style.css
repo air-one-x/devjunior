@@ -31,14 +31,19 @@
 .contrats {
     opacity: 0.5;
 }
-.button__inscription {
+
+.button--list {
+    display: flex;
+    align-items: center;
+}
+
+.button--list__register button {
     background-color: #220bad;
     border: 1px solid white;
     color: white;
     opacity: 0.5;
-
 }
-.button__inscription:hover {
+.button--list__register button:hover {
     opacity: 1;
 }
 .button__connexion {
@@ -46,6 +51,7 @@
     border: 1px solid #220bad;
     color: #220bad;
     opacity: 0.9;
+    margin-bottom: 4.5%;
 }
 .button__connexion:hover {
     opacity: 1;
@@ -200,6 +206,24 @@
 @media all and (max-width: 570px) {
     .slide--show {
         margin-top: 15%;
+    }
+}
+
+@media all and (max-width: 539px) {
+    .triangle--top--developer, .slide--show h2 {
+        margin-top: 30%;
+    }
+}
+
+@media all and (max-width:483px) {
+    .slide--show h2 {
+        margin-top: 40%;
+    }
+}
+
+@media all and (max-width:391px) {
+    .triangle--top--developer, .slide--show h2 {
+        margin-top: 60%;
     }
 }
 

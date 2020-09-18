@@ -5,6 +5,7 @@ import { v4 as id } from 'uuid';
 import './home.style.css';
 import Logos from '../../Data/logos';
 import Slide from '../../containers/slideHome.container';
+import ButtonRegister from '../../containers/modal.inscription.container';
 
 const Home = () => {
 
@@ -21,9 +22,11 @@ const Home = () => {
                     <p>Devjunior a était conçu pour donner de la visibilité aux développeurs juniors mais aussi pour montrer aux entreprises que les développeurs juniors ont du talent.  </p>
                     <br></br>
                     <p className="contrats">CDI, CDD, stage, alternance ou freelance</p>
-                    <br></br>
-                    <button className="button__inscription">S'inscrire</button>
-                    <button className="button__connexion">Se connecter</button>
+                    <div className="button--list">
+                        <div className="button--list__register"><ButtonRegister /></div>
+                        <button className="button__connexion">Se connecter</button>
+                    </div>
+                    
                 </div>
 
             <div className="home--page__picture"></div>
