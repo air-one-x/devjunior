@@ -114,7 +114,10 @@ const TransitionsModal = ({...state}) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-                  <h2 id="transition-modal-title" className="title--modal--inscription">Inscription</h2>
+            <div className="close--modal">
+                <span onClick={() => handleClose()}>x</span>
+                <h2 id="transition-modal-title" className="title--modal--inscription">Inscription</h2>
+            </div>
             <form className="form--inscription" onSubmit={(e) => {
               e.preventDefault();
               const message = document.getElementById('message--form') ;

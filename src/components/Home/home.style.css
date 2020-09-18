@@ -162,6 +162,7 @@
 .slide--show {
     width: 100%;
     margin-top: 10%;
+    z-index: 0;
 }
 .slide--show h2 {
     font-size: 2.5rem;

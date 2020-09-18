@@ -39,3 +39,26 @@
     font-size: small;
 }
 
+.close--modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close--modal span {
+    margin-bottom: 5%;
+    background-color: #220bad;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    opacity: 0.5;
+}
+
+.close--modal span:hover {
+    cursor: pointer;
+    opacity: 1;
+    
+}
+
