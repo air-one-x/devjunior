@@ -1,4 +1,4 @@
-import { EMAIL, PASSWORD, VERIF_PASS, IS_COMPANY, NAME, IS_REGISTER } from '../actions/modal.inscription.action';
+import { EMAIL, PASSWORD, VERIF_PASS, IS_COMPANY, NAME, IS_REGISTER, RESTART } from '../actions/modal.inscription.action';
 
 const initialState = {
     name: '',
@@ -40,6 +40,16 @@ export default (state= initialState, action={}) => {
         return {
             ...state,
             isRegister: action.payload
+        };
+        case RESTART :
+        return {
+            ...state,
+            name: '',
+            email: '',
+            password: '',
+            verifPass: '',
+            isCompany: false,
+            isRegister: ''
         }
         default:
             return state; 

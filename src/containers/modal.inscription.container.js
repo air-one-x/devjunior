@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ModalInscription from '../components/NavBarTop/modal.inscription';
-import { changeEmail, changePassword, changeName, changeIsCompany, changeVerifPass, apiConnection } from '../actions/modal.inscription.action';
+import { changeEmail, changePassword, changeName, changeIsCompany, changeVerifPass, apiConnection, restart } from '../actions/modal.inscription.action';
 
 const mapStateToProps = (state) => ({
     email : state.modalInscription.email,
@@ -17,7 +17,8 @@ const mapDispatchToProps = (dispatch) => ({
     changeIsCompany: (event) => dispatch(changeIsCompany(event)),
     changeVerifPass: (event) => dispatch(changeVerifPass(event)),
     changePassword: (event) => dispatch(changePassword(event)),
-    checkApi: () => dispatch(apiConnection())
+    checkApi: () => dispatch(apiConnection()),
+    restart: () => dispatch(restart())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ModalInscription) ;

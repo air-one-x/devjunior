@@ -5,6 +5,11 @@ export const VERIF_PASS = 'VERIF_PASS';
 export const IS_COMPANY = 'IS_COMPANY' ;
 export const API_CONNECTION = 'API_CONNEXION';
 export const IS_REGISTER = 'IS_REGISTER';
+export const RESTART = 'RESTART';
+
+export const restart = () => ({
+    type: RESTART,
+});
 
 export const changeEmail = (payload) => ({
     type: EMAIL,
