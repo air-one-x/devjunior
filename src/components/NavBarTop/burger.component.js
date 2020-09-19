@@ -3,7 +3,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
-import Register from '../../containers/modal.inscription.container';
+import Register from '../../containers/inscription.container';
+import Login from '../../containers/connection.container';
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -30,7 +31,7 @@ export default function SimpleMenu() {
         style={{marginTop:'2.5rem'}}
       >
         <MenuItem onClick={handleClose}><Register /></MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+        <MenuItem onClick={handleClose}><Login /></MenuItem>
         <MenuItem onClick={handleClose}>Logout</MenuItem>
       </Menu>
     </div>

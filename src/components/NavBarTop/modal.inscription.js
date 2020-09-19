@@ -42,6 +42,8 @@ const TransitionsModal = ({...state}) => {
 
   const REGEX_PASSWORD = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/ ;
 
+  const REGEX_NAME = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/ ;
+
   
 
   const testRegex = (email) => {
@@ -121,13 +123,13 @@ const TransitionsModal = ({...state}) => {
             <form className="form--inscription" onSubmit={(e) => {
               e.preventDefault();
               const message = document.getElementById('message--form') ;
-              if(state.email != '' && state.password !='' && state.name !='' && state.verifPass != '') {
+              if(state.email != '' && state.password !='' && state.name !='' && state.verifPass != '' && state.password === state.verifPass && REGEX_PASSWORD.test(state.password) === true && REGEX_PASSWORD.test(state.verifPass) === true && REGEX_NAME.test(state.name) === true ) {
                   message.classList.remove('check--form--false');
                   message.textContent = '';
                   state.checkApi();
               } else {                       
                 message.classList.add('check--form--false');
-                message.textContent = 'Veuillez remplir les champs manquants';
+                message.textContent = 'Certains champs sont invalides';
               }
             } }>
                <div className="username form-group row">

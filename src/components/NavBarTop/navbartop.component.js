@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import './navbartop.style.css';
 import Burger from './burger.component';
-import ModalInscription from '../../containers/modal.inscription.container';
+import ModalInscription from '../../containers/inscription.container';
 
 const NavBarTop = () => {
 

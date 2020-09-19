@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
-import ModalInscription from '../components/NavBarTop/modal.inscription';
+import registerReducer from '../components/NavBarTop/modal.inscription';
 import { changeEmail, changePassword, changeName, changeIsCompany, changeVerifPass, apiConnection, restart } from '../actions/modal.inscription.action';
 
 const mapStateToProps = (state) => ({
-    email : state.modalInscription.email,
-    password : state.modalInscription.password,
-    name: state.modalInscription.name,
-    verifPass: state.modalInscription.verifPass,
-    isCompany: state.modalInscription.isCompany,
-    isRegister: state.modalInscription.isRegister
+    email : state.registerReducer.email,
+    password : state.registerReducer.password,
+    name: state.registerReducer.name,
+    verifPass: state.registerReducer.verifPass,
+    isCompany: state.registerReducer.isCompany,
+    isRegister: state.registerReducer.isRegister
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch) => ({
     restart: () => dispatch(restart())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ModalInscription) ;
+export default connect(mapStateToProps, mapDispatchToProps)(registerReducer) ;

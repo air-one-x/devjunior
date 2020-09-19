@@ -1,0 +1,12 @@
+#button--form--connection {
+    background-color: #220bad;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.title--modal--connection {
+    margin-bottom: 3rem;
+    text-align: center;
+}

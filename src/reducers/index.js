@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 import slideHome from './slideHome.reducer';
-import modalInscription from './modal.inscription.reducer';
+import registerReducer from './inscription.reducer';
+import connectionReducer from './login.reducer';
 
 export default combineReducers({
-  slideHome, modalInscription
+  slideHome, registerReducer, connectionReducer
 });

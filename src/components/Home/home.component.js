@@ -5,7 +5,7 @@ import { v4 as id } from 'uuid';
 import './home.style.css';
 import Logos from '../../Data/logos';
 import Slide from '../../containers/slideHome.container';
-import ButtonRegister from '../../containers/modal.inscription.container';
+import ButtonRegister from '../../containers/inscription.container';
 
 const Home = () => {
 
