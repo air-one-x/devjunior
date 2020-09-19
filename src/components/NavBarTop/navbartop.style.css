@@ -11,7 +11,7 @@
     padding-left: 9%;
     padding-right: 9%;
     position: fixed;
-    z-index: 100;
+    z-index: 80;
     height: 90px;
     top: 0;
 }
@@ -38,6 +38,11 @@
 .navbar--black {
     transition: ease-out 1s;
     background-color: black;
+}
+
+.MuiButtonBase-root button {
+    border: none;
+    background-color: white;
 }
 @media all and (max-width: 1050px) {
     .burger {
